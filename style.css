@@ -1,0 +1,1421 @@
+/* CSS to add font with custom*/
+
+@font-face {
+    font-family: neu;
+    src: url(./font/NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 200;
+    src: url(./font/NeueHaasDisplayRoman.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    src: url(./font/NeueHaasDisplayLight.ttf);
+    font-weight: 300;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: neu;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* CSS for main tag*/
+
+#main {
+    z-index: 100;
+}
+
+
+/* CSS for page 1*/
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0 2vw;
+    background-color: #EFEAE3;
+}
+
+
+/* CSS for nav bar*/
+
+nav {
+    width: 100%;
+    display: flex;
+    padding: 2vw 0;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+}
+
+#nav-right {
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+}
+
+#nav-right h4 {
+    border: solid gray;
+    border-width: 1px;
+    align-items: center;
+    padding: 12px 23px;
+    border-radius: 50px;
+    position: relative;
+    font-size: 17px;
+    font-weight: 200;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+#nav-right h4 a {
+    text-decoration: none;
+    color: black;
+    z-index: 9;
+    position: relative;
+}
+
+#menu {
+    display: none;
+}
+
+#menu h4 {
+    border: solid gray;
+    border-width: 1px;
+    align-items: center;
+    padding: 12px 23px;
+    border-radius: 50px;
+    position: relative;
+    font-size: 17px;
+    font-weight: 200;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+#menu-overlay {
+    display: none;
+}
+
+
+/* CSS for nav bar animation*/
+
+#nav-right h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#nav-right h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-right h4:hover a {
+    color: white;
+}
+
+#center {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid gray;
+    padding-bottom: 3.5vw;
+}
+
+#right h1 {
+    font-size: 10vw;
+    line-height: 9vw;
+    text-align: right;
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 1.95vw;
+}
+
+
+/* CSS for video of page 1*/
+
+#video-div {
+    object-position: center;
+    object-fit: cover;
+    padding-top: 4vw;
+    width: 100%;
+    height: 59vw;
+}
+
+#video-div video {
+    position: relative;
+    object-position: center;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* CSS for page 1 glob */
+
+#heroShape {
+    height: 32vw;
+    width: 45vw;
+    position: absolute;
+    right: 0%;
+    top: 42vw;
+}
+
+#hero1 {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(to top right, #fe220a, #fe670a);
+    position: absolute;
+    right: 0;
+    border-radius: 15vw;
+    filter: blur(20px);
+    animation-name: anime1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#hero2 {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(to top right, #FE330A, #fe670a);
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 15vw;
+    filter: blur(20px);
+    animation-name: anime2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+#hero3 {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(to top right, #FE330A, #fe670a);
+    position: absolute;
+    right: 0;
+    border-radius: 15vw;
+    filter: blur(20px);
+    animation-name: anime3;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+
+/* CSS for page 1 glob animation*/
+
+@keyframes anime1 {
+    from {
+        transform: translate(5%, 10%);
+    }
+    to {
+        transform: translate(-45%, -15%);
+    }
+}
+
+@keyframes anime2 {
+    from {
+        transform: translate(10%, -15%);
+    }
+    to {
+        transform: translate(-25%, 15%);
+    }
+}
+
+@keyframes anime3 {
+    from {
+        transform: translate(0%, -25%);
+    }
+    to {
+        transform: translate(-15%, 0%);
+    }
+}
+
+
+/* CSS for page 2 */
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+}
+
+
+/* CSS for page 2 moving text */
+
+#moving-text {
+    padding: 8vw 0;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+#circle {
+    height: 65px;
+    width: 65px;
+    background-color: #FE330A;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1vw 1.5vw;
+}
+
+#text-con {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: move;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#text-con h1 {
+    font-size: 9.3vw;
+    display: inline-block;
+}
+
+
+/* CSS for page 2 moving text animation */
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* CSS for page 2 content */
+
+#page2-bottom {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 5.9vw;
+    position: relative;
+    z-index: 9;
+}
+
+#bottom1 {
+    width: 65%;
+}
+
+#bottom1 h1 {
+    font-size: 4.3vw;
+    line-height: 4.6vw;
+}
+
+#bottom2 {
+    width: 25%;
+    padding: 9vw 0;
+    padding-left: 2vw;
+}
+
+#bottom2 img {
+    width: 19.5vw;
+    height: 13vw;
+    border-radius: 10px;
+}
+
+#bottom2 p {
+    margin-top: 3vw;
+    width: 20vw;
+    align-items: center;
+    font-weight: 200;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+}
+
+
+/* CSS for page 2 glob animation */
+
+#glob {
+    height: 75vh;
+    width: 75vh;
+    background: linear-gradient(to top right, #fe1e0a, #fe670a);
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    animation-name: glob;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes glob {
+    from {
+        transform: translate(10%, -10%) skew(0);
+        filter: blur(20px);
+    }
+    to {
+        transform: translate(-10%, 10%) skew(-15deg);
+        filter: blur(30px);
+    }
+}
+
+
+/* CSS for page 3 */
+
+#supElem {
+    display: block;
+}
+
+#sepElem {
+    display: none;
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding-top: 5.4vw;
+}
+
+#page3 .smallC {
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #fe220a;
+    margin-bottom: 2px;
+}
+
+#page3 .fp {
+    height: 8vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2.2vw;
+    position: relative;
+    gap: 8px;
+}
+
+#page3 .fp h5 {
+    font-weight: 200;
+    font-size: 0.95vw;
+    line-height: 1.5vw;
+}
+
+
+/* container for page 3 sub elements */
+
+.elem-container {
+    position: relative;
+    margin-top: 0.7vw;
+}
+
+
+/* page 3 sub elements */
+
+.elem {
+    display: flex;
+    align-items: center;
+    height: 8vw;
+    width: 100%;
+    border-bottom: solid gray;
+    border-width: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* page 3 sub elements h2 tags */
+
+.elem h2 {
+    font-size: 3.5vw;
+    padding: 0 2.2vw;
+    position: relative;
+}
+
+
+/* CSS for sub elements overlay animation */
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #fe670a;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    transition: all ease 0.2s;
+}
+
+.elem:hover .overlay {
+    position: absolute;
+    top: 0;
+}
+
+
+/* CSS for page 4 changing image box */
+
+#fixed {
+    height: 31vw;
+    width: 24.5vw;
+    position: fixed;
+    z-index: 99;
+    border-radius: 20px;
+    top: 8.3vw;
+    left: 50%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* CSS for page 4 */
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 4vw 2.2vw;
+    position: relative;
+}
+
+
+/* CSS for page 4 button */
+
+#ap-btn {
+    display: flex;
+}
+
+#ap-btn h5 {
+    border: solid gray;
+    border-width: 1px;
+    align-items: center;
+    padding: 12px 23px;
+    border-radius: 50px;
+    position: relative;
+    font-size: 17px;
+    font-weight: 200;
+    overflow: hidden;
+    transition: all ease 0.4s;
+}
+
+#ap-btn h5 a {
+    text-decoration: none;
+    color: black;
+    z-index: 9;
+    position: relative;
+}
+
+
+/* CSS for page 4 button animation */
+
+#ap-btn h5::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+
+#ap-btn h5:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#ap-btn h5:hover a {
+    color: white;
+}
+
+
+/* CSS for page 4 content */
+
+#page4-bottom {
+    width: 100%;
+    background-color: #0B0500;
+    height: 53.5vw;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 9.5vw;
+}
+
+
+/* CSS for page 4 left-side content */
+
+#part1 {
+    min-height: 100vh;
+    width: 44.5%;
+    display: flex;
+    flex-direction: column;
+    padding: 13vw 10vw;
+    margin-bottom: 2.2vw;
+}
+
+#h1-div h1 {
+    font-size: 4.5vw;
+    line-height: 4.5vw;
+    padding-left: 1vw;
+}
+
+#h1-div h1:hover {
+    cursor: pointer;
+}
+
+#h1-div .h1-1 {
+    border-left: solid orangered;
+    color: white;
+}
+
+#h1-div .h1-2,
+.h1-3 {
+    border-left: solid #504A45;
+    color: #504A45;
+}
+
+#p-div {
+    padding-top: 3vw;
+    width: 30vw;
+    color: white;
+    font-size: 1.1vw;
+    font-weight: 200;
+    line-height: 1.5vw;
+}
+
+
+/* CSS for page 4 right-side content */
+
+#part2 {
+    min-height: 100vh;
+    width: 55.5%;
+    position: relative;
+}
+
+#page4-b-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    bottom: 0;
+    border-radius: 20px;
+}
+
+#bgImg {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* CSS for page 5 */
+
+#page5 {
+    height: 90vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    padding: 2vw 0;
+}
+
+#page5 .smallC {
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #fe220a;
+    margin-bottom: 2px;
+}
+
+#page5 .W4 {
+    height: 8vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 2.2vw;
+    position: relative;
+    gap: 8px;
+}
+
+#page5 .W4 h5 {
+    font-weight: 200;
+    font-size: 0.95vw;
+    line-height: 1.5vw;
+}
+
+
+/* CSS for page 5 swiper effect */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-top: 2vw;
+}
+
+.swiper-slide {
+    height: 50%;
+    width: 25%;
+    padding: 0 2vw;
+    border-left: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.swiper-slide .imgL {
+    height: 24%;
+    width: 49%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.swiper-slide .L3 {
+    height: 55%;
+    width: 51%;
+}
+
+.swiper-slide .L5 {
+    height: 24%;
+    width: 49%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.swiper-slide .L6 {
+    height: 24%;
+    width: 49%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.swiper-slide .L7 {
+    height: 23.8%;
+    width: 48.8%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.p {
+    font-family: neu;
+    font-weight: 300;
+    font-size: 1.1vw;
+}
+
+
+/* CSS for page 6*/
+
+#page6 {
+    padding-top: 18vh;
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(to top right, orangered, rgb(196, 52, 0));
+    position: sticky;
+    bottom: 0;
+    z-index: -1;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 25vh;
+    padding: 4vw 6vw;
+}
+
+#footer1 h1:hover {
+    cursor: pointer;
+}
+
+#footer2 p {
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+
+#footer3 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0 2vw;
+}
+
+#footer3 h1 {
+    padding-top: 4vw;
+    font-size: 20vw;
+    line-height: 20vw;
+}
+
+#end {
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    height: 3.1vw;
+    display: flex;
+    justify-content: center;
+    background-color: #EFEAE3;
+}
+
+#end p {
+    padding-top: 1vw;
+    text-align: center;
+    color: black;
+}
+
+
+/* CSS for page 6 overlay*/
+
+#page6-overlay {
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0;
+}
+
+#menu-overlay {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 52.5vh;
+    background-color: #EFEAE3;
+    z-index: 6;
+    border-bottom-left-radius: 6vw;
+    border-bottom-right-radius: 6vw;
+    transition: ease all 0.9s;
+}
+
+#shadow {
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    opacity: 50%;
+    z-index: 5;
+    transition: ease all 0.9s;
+}
+
+@media (max-width:600px) {
+    #page1 {
+        min-height: 100vh;
+        width: 100%;
+        padding: 0 4.5vw;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        padding: 6vw 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #nav-right {
+        display: none;
+    }
+    #logo {
+        scale: 90%;
+    }
+    #menu {
+        display: flex;
+    }
+    #menu h4 a {
+        text-decoration: none;
+        color: black;
+        z-index: 9;
+        position: relative;
+    }
+    #menu h4 {
+        border: solid gray;
+        border-width: 1px;
+        align-items: center;
+        padding: 12px 23px;
+        border-radius: 50px;
+        position: relative;
+        font-size: 17px;
+        font-weight: 200;
+        overflow: hidden;
+        transition: all ease 0.4s;
+        background-color: #EFEAE3;
+    }
+    #menu-op {
+        padding-top: 33.5vw;
+        z-index: 0;
+    }
+    #menu-op h1 {
+        text-align: right;
+        font-size: 15vw;
+        line-height: 16vw;
+        padding-right: 4vw;
+    }
+    /*    */
+    #center {
+        width: 100%;
+        min-height: 62.5vh;
+        display: flex;
+        flex-direction: column-reverse;
+        border-bottom: 1px solid gray;
+        padding-bottom: 3.5vw;
+    }
+    #right {
+        padding-top: 14.5vw;
+    }
+    #right h1 {
+        font-size: 17vw;
+        line-height: 14vw;
+        text-align: right;
+        font-weight: 500;
+        letter-spacing: -1px;
+    }
+    #left h3 {
+        width: 100vw;
+        font-size: 5.5vw;
+        line-height: 5.7vw;
+        text-align: left;
+        font-weight: 400;
+        padding-left: 9vw;
+        padding-bottom: 8vw;
+    }
+    #video-div {
+        position: relative;
+        margin-top: 10vw;
+        width: 100%;
+        height: 450px;
+    }
+    #video-div video {
+        position: absolute;
+        top: 0;
+        object-position: center;
+        object-fit: cover;
+        width: 100%;
+        height: 450px;
+        border-radius: 20px;
+    }
+    /* CSS for page 1 glob */
+    #heroShape {
+        height: 64vw;
+        width: 90vw;
+        position: absolute;
+        right: 0;
+        top: 500px;
+    }
+    #hero1 {
+        height: 60vw;
+        width: 60vw;
+        background: linear-gradient(to top right, #fe220a, #fe670a);
+        position: absolute;
+        right: 0;
+        border-radius: 30vw;
+        filter: blur(20px);
+        animation-name: anime1;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+    #hero2 {
+        height: 60vw;
+        width: 60vw;
+        background: linear-gradient(to top right, #FE330A, #fe670a);
+        position: absolute;
+        right: 0;
+        border-radius: 30vw;
+        filter: blur(20px);
+        animation-name: anime2;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+    #hero3 {
+        height: 60vw;
+        width: 60vw;
+        background: linear-gradient(to top right, #FE330A, #fe670a);
+        position: absolute;
+        right: 0;
+        border-radius: 30vw;
+        filter: blur(20px);
+        animation-name: anime3;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+    /* CSS for page 1 glob animation*/
+    @keyframes anime1 {
+        from {
+            transform: translate(0%, 10%);
+        }
+        to {
+            transform: translate(-45%, -15%);
+        }
+    }
+    @keyframes anime2 {
+        from {
+            transform: translate(0%, -15%);
+        }
+        to {
+            transform: translate(0%, 15%);
+        }
+    }
+    @keyframes anime3 {
+        from {
+            transform: translate(0%, -25%);
+        }
+        to {
+            transform: translate(-15%, 0%);
+        }
+    }
+    /* CSS for page 2 */
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        position: relative;
+    }
+    /* CSS for page 2 moving text */
+    #moving-text {
+        padding: 8vw 0;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    #moving-text::-webkit-scrollbar {
+        display: none;
+    }
+    #circle {
+        height: 8vw;
+        width: 8vw;
+        background-color: #FE330A;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 1vw 1.5vw;
+    }
+    #text-con {
+        display: inline-block;
+        white-space: nowrap;
+        animation-name: move;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    #text-con h1 {
+        font-size: 14.5vw;
+        display: inline-block;
+        letter-spacing: -2px;
+    }
+    /* CSS for page 2 content */
+    #page2-bottom {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 3vw 4.8vw;
+        position: relative;
+        z-index: 9;
+    }
+    #bottom1 {
+        height: 40%;
+        padding-top: 6vw;
+        padding: auto;
+        width: 100%;
+    }
+    #bottom1 br {
+        display: none;
+    }
+    #bottom1 h1 {
+        font-size: 8vw;
+        line-height: 8.5vw;
+    }
+    #bottom2 {
+        padding-top: 3vw;
+        width: 100%;
+        height: 60%;
+    }
+    #bottom2 img {
+        height: 175px;
+        width: 254px;
+        border-radius: 10px;
+    }
+    #bottom2 p {
+        margin-top: 8vw;
+        width: 72vw;
+        align-items: center;
+        font-weight: 200;
+        font-size: 3.9vw;
+        line-height: 5.5vw;
+    }
+    /* CSS for page 2 glob animation */
+    #glob {
+        height: 44vh;
+        width: 44vh;
+        background: linear-gradient(to top right, #fe1e0a, #fe670a);
+        border-radius: 50%;
+        position: absolute;
+        top: 32%;
+        left: 16%;
+        animation-name: glob;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
+    @keyframes glob {
+        from {
+            transform: translate(3%, -10%) skew(5deg);
+            filter: blur(10px);
+        }
+        to {
+            transform: translate(-10%, 10%) skew(-25deg);
+            filter: blur(20px);
+        }
+    }
+    /* CSS for page 3 */
+    #page3 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding-top: 5.4vw;
+    }
+    #page3 .smallC {
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        background-color: #fe220a;
+        margin-bottom: 2px;
+    }
+    #page3 .fp {
+        height: 8vw;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 4.5vw;
+        padding-top: 18vw;
+        position: relative;
+        gap: 8px;
+    }
+    #page3 .fp h5 {
+        font-weight: 200;
+        font-size: 4vw;
+        line-height: 1.5vw;
+    }
+    /* container for page 3 sub elements */
+    #superElem {
+        display: none;
+    }
+    #sepElem {
+        display: block;
+        width: 100vw;
+        min-height: 100vh;
+    }
+    .subElem {
+        width: 100%;
+        padding: 0 4vw;
+        padding-top: 7vw;
+        padding-bottom: 5.5vw;
+    }
+    .imgElem {
+        position: relative;
+        margin-top: 10vw;
+        width: 100%;
+        height: 410px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .imgElem img {
+        width: 100%;
+        height: 410px;
+    }
+    .subElem h1 {
+        padding-top: 6vw;
+        font-size: 7.5vw;
+    }
+    /* page 3 sub elements */
+    .elem {
+        display: flex;
+        align-items: center;
+        height: 8vw;
+        width: 100%;
+        border-bottom: solid gray;
+        border-width: 1px;
+        position: relative;
+        overflow: hidden;
+    }
+    /* page 3 sub elements h2 tags */
+    .elem h2 {
+        font-size: 3.5vw;
+        padding: 0 2.2vw;
+        position: relative;
+    }
+    /* CSS for sub elements overlay animation */
+    .elem .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: #fe670a;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        transition: all ease 0.2s;
+    }
+    .elem:hover .overlay {
+        position: absolute;
+        top: 0;
+    }
+    /* CSS for page 4 */
+    #page4 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding: 4vw 4.4vw;
+        position: relative;
+    }
+    /* CSS for page 4 button */
+    #ap-btn h5 {
+        border: solid gray;
+        border-width: 1px;
+        align-items: center;
+        padding: 11px 23px;
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: 200;
+    }
+    #ap-btn h5 a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+    }
+    #ap-btn h5::after {
+        display: none;
+    }
+    #ap-btn h5:hover a {
+        color: black;
+    }
+    /* CSS for page 4 content */
+    #page4-bottom {
+        position: relative;
+        width: 100%;
+        background-color: #0B0500;
+        min-height: 100vh;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 19vw;
+    }
+    /* CSS for page 4 left-side content */
+    #part1 {
+        min-height: 50vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 15vw 5vw;
+        margin-bottom: 2.2vw;
+    }
+    #h1-div h1 {
+        font-size: 11.5vw;
+        line-height: 11.5vw;
+        padding-left: 4vw;
+    }
+    #h1-div h1:hover {
+        cursor: pointer;
+    }
+    #h1-div .h1-1 {
+        border-left: solid orangered;
+        color: white;
+    }
+    #h1-div .h1-2,
+    .h1-3 {
+        border-left: solid #504A45;
+        color: #504A45;
+    }
+    #p-div {
+        padding-top: 7vw;
+        width: 100%;
+        color: white;
+        font-size: 3.8vw;
+        line-height: 5.5vw;
+        font-weight: 200;
+    }
+    /* CSS for page 4 right-side content */
+    #part2 {
+        padding-top: 21vw;
+        min-height: 50vh;
+        width: 100%;
+    }
+    #page4-b-img {
+        height: 51vh;
+        width: 100%;
+        position: relative;
+        top: 0;
+        border-radius: 20px;
+    }
+    #bgImg {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+    /* CSS for page 5 */
+    #page5 {
+        height: 90vh;
+        width: 100%;
+        background-color: #EFEAE3;
+        padding: 0 3vw;
+        padding-top: 20.5vh;
+    }
+    #page5 .smallC {
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        background-color: #fe220a;
+        margin-bottom: 1px;
+    }
+    #page5 .W4 {
+        height: 8vw;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 2vw;
+        position: relative;
+        gap: 8px;
+    }
+    #page5 .W4 h5 {
+        font-weight: 200;
+        font-size: 4vw;
+    }
+    /* CSS for page 5 swiper effect */
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding-top: 18vw;
+    }
+    .swiper-slide {
+        height: 74%;
+        width: 62%;
+        padding-top: 4vw;
+        border-left: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+    }
+    .swiper-slide .imgL {
+        height: 24%;
+        width: 59%;
+        object-fit: cover;
+        object-position: left;
+    }
+    .swiper-slide .L3 {
+        height: 52%;
+        width: 82%;
+    }
+    .swiper-slide .L5 {
+        height: 23%;
+        width: 70%;
+        object-fit: cover;
+        object-position: left;
+    }
+    .swiper-slide .L6 {
+        height: 25%;
+        width: 80%;
+        object-fit: cover;
+        object-position: left;
+    }
+    .swiper-slide .L7 {
+        height: 23%;
+        width: 75%;
+        object-fit: cover;
+        object-position: left;
+    }
+    .p {
+        font-family: neu;
+        font-weight: 300;
+        font-size: 3.9vw;
+    }
+    .p br {
+        display: none;
+    }
+    /* CSS for page 6*/
+    #page6 {
+        width: 100%;
+        min-height: 100vh;
+        color: white;
+        background: linear-gradient(to right, orangered, rgb(196, 52, 0));
+        position: sticky;
+        bottom: 0;
+        z-index: -1;
+    }
+    /* CSS for page 6 overlay*/
+    #page6-overlay {
+        width: 100%;
+        min-height: 100vh;
+        opacity: 100%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 30vh;
+        padding: 4vw 6vw;
+    }
+    #footer1 h1:hover {
+        cursor: pointer;
+    }
+    #footer2 p {
+        padding-top: 6vw;
+        font-size: 5.5vw;
+        font-weight: 200;
+    }
+    #footer3 {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        margin: 0 2vw;
+    }
+    #footer3 h1 {
+        padding-top: 36vh;
+        padding-bottom: 4vh;
+        font-size: 20vw;
+        line-height: 20vw;
+    }
+    #end {
+        position: relative;
+        bottom: 0%;
+        width: 100%;
+        height: 10vw;
+        padding-top: 1vw;
+        background-color: #EFEAE3;
+    }
+    #end p {
+        padding-top: 1vw;
+        text-align: center;
+        color: black;
+        font-weight: 200;
+    }
+}
