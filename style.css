@@ -204,7 +204,6 @@ nav {
     background: linear-gradient(to top right, #FE330A, #fe670a);
     position: absolute;
     left: 0;
-    right: 0;
     border-radius: 15vw;
     filter: blur(20px);
     animation-name: anime2;
@@ -932,9 +931,9 @@ footer {
         width: 60vw;
         background: linear-gradient(to top right, #fe220a, #fe670a);
         position: absolute;
-        right: 0;
+        right: 1%;
         border-radius: 30vw;
-        filter: blur(20px);
+        filter: blur(10px);
         animation-name: anime1;
         animation-duration: 7s;
         animation-iteration-count: infinite;
@@ -948,7 +947,7 @@ footer {
         position: absolute;
         right: 0;
         border-radius: 30vw;
-        filter: blur(20px);
+        filter: blur(10px);
         animation-name: anime2;
         animation-duration: 7s;
         animation-iteration-count: infinite;
@@ -960,9 +959,9 @@ footer {
         width: 60vw;
         background: linear-gradient(to top right, #FE330A, #fe670a);
         position: absolute;
-        right: 0;
+        right: 1%;
         border-radius: 30vw;
-        filter: blur(20px);
+        filter: blur(10px);
         animation-name: anime3;
         animation-duration: 7s;
         animation-iteration-count: infinite;
@@ -972,7 +971,7 @@ footer {
     /* CSS for page 1 glob animation*/
     @keyframes anime1 {
         from {
-            transform: translate(0%, 10%);
+            transform: translate(-1%, 10%);
         }
         to {
             transform: translate(-45%, -15%);
@@ -988,7 +987,7 @@ footer {
     }
     @keyframes anime3 {
         from {
-            transform: translate(0%, -25%);
+            transform: translate(-1%, -25%);
         }
         to {
             transform: translate(-15%, 0%);
