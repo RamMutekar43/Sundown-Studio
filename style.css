@@ -491,6 +491,7 @@ nav {
     top: 8.3vw;
     left: 50%;
     display: none;
+    /* background-color: #0B0500; */
     background-size: cover;
     background-position: center;
 }
