@@ -813,7 +813,7 @@ footer {
 }
 
 #shadow {
-    position: fixed;
+    position: absolute;
     background-color: black;
     height: 100vh;
     width: 100%;
@@ -845,6 +845,7 @@ footer {
     }
     #menu {
         display: flex;
+        /* z-index: 100; */
     }
     #menu h4 a {
         text-decoration: none;
